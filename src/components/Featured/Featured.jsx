@@ -28,7 +28,7 @@ const Featured = () => {
       </div>
       {showAll < jobs.length && (
         <div className='text-center'>
-          <button className='my-4  bg-indigo-700 py-5 px-10 text-white font-medium text-xl rounded-lg' onClick={handleShowAll}>Show All</button>
+          <button className='my-4  bg-indigo-700 py-5 px-10 text-white font-medium text-xl rounded-lg' onClick={handleShowAll}>Show All Jobs</button>
         </div>
       )}
     </div>
