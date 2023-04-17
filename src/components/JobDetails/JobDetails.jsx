@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faLocationDot,faDollar,faCalendar,faPhone,faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { addToDb } from '../../utilities/fakedb';
 
 const JobDetails = () => {
  const jobData=useLoaderData();
@@ -10,8 +11,15 @@ const JobDetails = () => {
 
 
  const findData=jobData.find(data=>parseInt(data.id)===parseInt(jobId));
- console.log(findData)
-const {job_description,job_responsibility,educational_requirements,experiences,salary,job_title,contact_information,location}=findData
+ const {job_description,job_responsibility,educational_requirements,experiences,salary,job_title,contact_information,location}=findData;
+
+ const handleApplyNow=(data)=>{
+
+    addToDb(data.job_title)
+  }
+ 
+ 
+ 
  return (
   <div>
    <h1 className='bg-slate-50 text-center text-2xl font-bold py-28'>Job Details</h1>
@@ -35,7 +43,7 @@ const {job_description,job_responsibility,educational_requirements,experiences,s
       <p className='my-2'><FontAwesomeIcon className='me-1 text-gray-500' icon={faLocationDot} /><span className='font-semibold'>Address:</span> {location}</p>
 
      </div>
-     <button className='my-4 bg-indigo-700 py-5 px-40 text-white font-medium text-xl rounded-lg'>Apply Now</button>
+     <button onClick={()=>handleApplyNow(findData)} className='my-4 bg-indigo-700 py-5 px-40 text-white font-medium text-xl rounded-lg'>Apply Now</button>
     </div>
    </div>
   </div>
