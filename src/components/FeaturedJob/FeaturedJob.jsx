@@ -14,7 +14,7 @@ const FeaturedJob = ({job,handleViewDetails}) => {
    <p className='flex gap-6'> <span className='text-xl text-gray-500 font-medium'>  <FontAwesomeIcon className='me-1' icon={faLocationDot} />
  {location}</span> <span className='text-xl text-gray-500 font-medium'>Salary: ${salary}</span></p>
    
-<button className='bg-indigo-400 mt-2 px-3 py-2 text-white font-semibold rounded-lg'><Link to={`/detail/${id}`}>View Details</Link></button>
+<button className='bg-indigo-700 mt-2 px-3 py-2 text-white font-semibold rounded-lg'><Link to={`/detail/${id}`}>View Details</Link></button>
   </div>
  );
 };

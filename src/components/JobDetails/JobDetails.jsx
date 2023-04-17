@@ -33,7 +33,9 @@ const {job_description,job_responsibility,educational_requirements,experiences,s
       <p className='my-2'><FontAwesomeIcon className='me-1 text-gray-500' icon={faPhone} /><span className='font-semibold'>Phone:</span> {contact_information.phone}</p>
       <p className='my-2'><FontAwesomeIcon className='me-1 text-gray-500' icon={faEnvelope} /><span className='font-semibold'>Email:</span> {contact_information.email}</p>
       <p className='my-2'><FontAwesomeIcon className='me-1 text-gray-500' icon={faLocationDot} /><span className='font-semibold'>Address:</span> {location}</p>
+
      </div>
+     <button className='my-4 bg-indigo-700 py-5 px-40 text-white font-medium text-xl rounded-lg'>Apply Now</button>
     </div>
    </div>
   </div>

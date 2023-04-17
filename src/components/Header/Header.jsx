@@ -15,7 +15,7 @@ const Header = () => {
     <Link to="/blog">BLog</Link>
     <Link to="/about">About</Link>
    </div>
-   <button className='bg-indigo-400 p-4 rounded-lg text-white font-semibold'>Start Applying</button>
+   <button className='bg-indigo-700 p-4 rounded-lg text-white font-semibold'>Start Applying</button>
   </nav>
  </div>
  </div>
