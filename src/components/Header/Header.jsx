@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
  return (
- <div className='bg-slate-50 pt-7'>
+ <div className='bg-slate-50 py-7 sticky top-0'>
   <div className='w-80 mx-auto '>
    <nav className='flex  justify-between items-center'>
    <h2 className='font-bold text-3xl'>Mr. AllRounder</h2>
