@@ -1,0 +1,111 @@
+ [
+   {
+     "id": 1,
+     "company_logo": "https://img.freepik.com/premium-vector/abc-letter-design-alphabets-with-creative-unique-fonts-styles_708797-132.jpg?size=626&ext=jpg&ga=GA1.1.1419972379.1680192737&semt=ais",
+     "job_title": "Software Engineer",
+     "company_name": "ABC Inc.",
+     "remote_or_onsite": "Remote",
+     "location": "New York",
+     "fulltime_or_parttime": "Full-time",
+     "salary": "100,000 - 120,000",
+     "job_description": "We are seeking a skilled software engineer to join our team...",
+     "job_responsibility": "Design, develop and maintain software applications...",
+     "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field",
+     "experiences": "5+ years of professional software development experience",
+     "contact_information": {
+       "phone": "+1-123-456-7890",
+       "email": "hr@abcinc.com"
+     }
+   },
+   {
+     "id": 2,
+     "company_logo": "https://img.freepik.com/premium-vector/abstract-modern-monogram-xyz-letter-logo-icon-vector-template-black-background_111630-611.jpg?size=626&ext=jpg&ga=GA1.1.1419972379.1680192737&semt=ais",
+     "job_title": "Marketing Manager",
+     "company_name": "XYZ Corp.",
+     "remote_or_onsite": "Onsite",
+     "location": "San Francisco",
+     "fulltime_or_parttime": "Full-time",
+     "salary": "80,000 - 100,000",
+     "job_description": "We are looking for a creative and strategic marketing manager...",
+     "job_responsibility": "Develop and implement marketing plans and campaigns...",
+     "educational_requirements": "Bachelor's or Master's degree in Marketing or related field",
+     "experiences": "7+ years of experience in marketing and/or advertising",
+     "contact_information": {
+       "phone": "+1-123-456-7890",
+       "email": "hr@xyzcorp.com"
+     }
+   },
+   {
+     "id": 3,
+     "company_logo": "https://img.freepik.com/free-vector/l-purple-logo-business-brand-identity-design-vector-illustration_1142-14330.jpg?size=626&ext=jpg&ga=GA1.1.1419972379.1680192737&semt=ais",
+     "job_title": "Graphic Designer",
+     "company_name": "LMN Design Studio",
+     "remote_or_onsite": "Remote",
+     "location": "Los Angeles",
+     "fulltime_or_parttime": "Part-time",
+     "salary": "30 - 50 per hour",
+     "job_description": "We are seeking a talented graphic designer to join our team...",
+     "job_responsibility": "Create visual concepts and designs for various projects...",
+     "educational_requirements": "Bachelor's or Master's degree in Graphic Design or related field",
+     "experiences": "3+ years of professional graphic design experience",
+     "contact_information": {
+       "phone": "+1-123-456-7890",
+       "email": "hr@lmndesignstudio.com"
+     }
+   },
+   {
+     "id": 4,
+     "company_logo": "https://img.freepik.com/free-vector/professional-rr-logotype-template_23-2149221835.jpg?size=626&ext=jpg&ga=GA1.1.1419972379.1680192737&semt=ais",
+     "job_title": "Sales Representative",
+     "company_name": "PQR Inc.",
+     "remote_or_onsite": "Onsite",
+     "location": "Chicago",
+     "fulltime_or_parttime": "Full-time",
+     "salary": "60,000 - 80,000",
+     "job_description": "We are looking for a motivated sales representative to join our team...",
+     "job_responsibility": "Identify and pursue sales opportunities with potential clients...",
+     "educational_requirements": "Bachelor's degree in Business, Marketing or related field",
+     "experiences": "2+ years of experience in sales or customer service",
+     "contact_information": {
+       "phone": "+1-123-456-789",
+       "email":"pqr@abcinc.com"}
+     },
+     {
+      "id": 5,
+      "company_logo": "https://img.freepik.com/free-vector/professional-rr-logotype-template_23-2149236331.jpg?size=626&ext=jpg&ga=GA1.1.1419972379.1680192737&semt=ais",
+      "job_title": "Data Scientist",
+      "company_name": "RST Analytics",
+      "remote_or_onsite": "Remote",
+      "location": "Seattle",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "120,000 - 150,000",
+      "job_description": "We are seeking a talented data scientist to join our team...",
+      "job_responsibility": "Develop and implement statistical models and algorithms to analyze large datasets...",
+      "educational_requirements": "Master's or PhD in Statistics, Mathematics, Computer Science or related field",
+      "experiences": "5+ years of experience in data analysis and modeling",
+      "contact_information": {
+        "phone": "+1-123-456-7890",
+        "email": "hr@rstanalytics.com"
+      }
+    },
+    {
+      "id": 6,
+      "company_logo": "https://img.freepik.com/free-vector/gradient-logo-template-with-abstract-shape_23-2148211713.jpg?size=626&ext=jpg&ga=GA1.1.1419972379.1680192737&semt=ais",
+      "job_title": "Human Resources Manager",
+      "company_name": "UVW Enterprises",
+      "remote_or_onsite": "Onsite",
+      "location": "Houston",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "90,000 - 110,000",
+      "job_description": "We are looking for an experienced human resources manager to lead our HR team...",
+      "job_responsibility": "Develop and implement HR policies and procedures...",
+      "educational_requirements": "Bachelor's or Master's degree in Human Resources, Business Administration or related field",
+      "experiences": "7+ years of experience in HR management",
+      "contact_information": {
+        "phone": "+1-123-456-7890",
+        "email": "hr@uvwenterprises.com"
+      }
+    }
+    
+    ]
+
