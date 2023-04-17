@@ -1,9 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faLocationDot,faDollar } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const FeaturedJob = ({job,handleViewDetails}) => {
- const {company_logo,job_title,company_name,remote_or_onsite,fulltime_or_parttime,location,salary}=job;
+ const {id,company_logo,job_title,company_name,remote_or_onsite,fulltime_or_parttime,location,salary}=job;
  return (
   <div className='border-2 border-black-500 p-10 rounded-lg'>
    <img className='w-28 h-16 mb-8' src={company_logo} alt="" />
@@ -13,7 +14,7 @@ const FeaturedJob = ({job,handleViewDetails}) => {
    <p className='flex gap-6'> <span className='text-xl text-gray-500 font-medium'>  <FontAwesomeIcon className='me-1' icon={faLocationDot} />
  {location}</span> <span className='text-xl text-gray-500 font-medium'>Salary: ${salary}</span></p>
    
-<button onClick={()=>handleViewDetails(job)} className='bg-indigo-400 mt-2 px-3 py-2 text-white font-semibold rounded-lg'>View Details</button>
+<button className='bg-indigo-400 mt-2 px-3 py-2 text-white font-semibold rounded-lg'><Link to={`/detail/${id}`}>View Details</Link></button>
   </div>
  );
 };
