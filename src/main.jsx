@@ -11,6 +11,7 @@ import Home from './components/Home/Home';
 import Main from './components/Main/Main';
 import JobDetails from './components/JobDetails/JobDetails';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
+import savedJobLoader from './loader/SaveJobLoader';
 const router=createBrowserRouter([
   {
     path:"/",
@@ -25,7 +26,7 @@ const router=createBrowserRouter([
       {
         path:'jobs',
         element:<AppliedJobs></AppliedJobs>,
-        loader:()=>fetch('featured.json')
+        loader:()=>fetch('/featured.json')
       },
       {
         path:'detail/:jobId',

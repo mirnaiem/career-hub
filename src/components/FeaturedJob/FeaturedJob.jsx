@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faLocationDot,faDollar } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
-const FeaturedJob = ({job,handleViewDetails}) => {
+const FeaturedJob = ({job}) => {
  const {id,company_logo,job_title,company_name,remote_or_onsite,fulltime_or_parttime,location,salary}=job;
  return (
   <div className='border-2 border-black-500 p-10 rounded-lg'>

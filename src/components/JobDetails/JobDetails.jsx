@@ -15,7 +15,7 @@ const JobDetails = () => {
 
  const handleApplyNow=(data)=>{
 
-    addToDb(data.job_title)
+    addToDb(data.id)
   }
  
  
