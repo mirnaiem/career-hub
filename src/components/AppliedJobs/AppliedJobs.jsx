@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { getShoppingCart } from '../../utilities/fakedb';
+import AppliedJob from '../AppliedJob/AppliedJob';
 
 const AppliedJobs = () => {
  const loadedJobs=useLoaderData();
@@ -18,9 +19,10 @@ const AppliedJobs = () => {
    <h1 className='bg-slate-50 text-center text-2xl font-bold py-28'>Applied Jobs</h1>
   
    <div className='w-80 mx-auto my-20'>
-   {
-    savedJobs.map(jobs=><h1>{jobs.job_title}</h1>)
+    {savedJobs?savedJobs.map(job=><AppliedJob key={job.id} job={job}></AppliedJob>):<h1 className='text-center text-5xl text-green-600'>No Applied Job Available!!!</h1>
+    
    }
+   
    </div>
   </div>
  );
