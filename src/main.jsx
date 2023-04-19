@@ -12,6 +12,7 @@ import Main from './components/Main/Main';
 import JobDetails from './components/JobDetails/JobDetails';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import savedJobLoader from './loader/SaveJobLoader';
+import Statistic from './components/Statistic/Statistic';
 const router=createBrowserRouter([
   {
     path:"/",
@@ -32,6 +33,10 @@ const router=createBrowserRouter([
         path:'detail/:jobId',
         element:<JobDetails></JobDetails>,
         loader:()=>fetch('/featured.json')
+      },
+      {
+        path:'statistic',
+        element:<Statistic></Statistic>
       }
     ]
   }
