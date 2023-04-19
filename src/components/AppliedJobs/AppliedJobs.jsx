@@ -16,24 +16,14 @@ const AppliedJobs = () => {
     }
   }
   const [remoteJobs, setRemoteJobs] = useState([]);
-  const [selectedOption, setSelectedOption] = useState("All");
-
-  const handleFilterChange = (event) => {
-    setSelectedOption(event.target.value);
-    if (event.target.value === "Remote") {
-      handleRemoteOrOnsiteJob("Remote");
-    } else if (event.target.value === "Onsite") {
-      handleRemoteOrOnsiteJob("Onsite");
-    } else {
-      setRemoteJobs([]);
-    }
-  };
-
-  const handleRemoteOrOnsiteJob = (jobType) => {
+  const [showDropdown, setShowDropdown] = useState(false);
+  
+  const handleRemoteOrOnsiteJob = jobType => {
     const filteredJobs = savedJobs.filter(
-      (job) => job.remote_or_onsite === jobType
+      job => job.remote_or_onsite === jobType
     );
     setRemoteJobs(filteredJobs);
+    setShowDropdown(false);
   };
 
   return (
@@ -45,13 +35,25 @@ const AppliedJobs = () => {
       <div className="w-80 mx-auto my-20">
         <div className="flex justify-between">
           <div></div>
-          <div className="mb-3">
-            
-            <select className='py-1 px-4 border-2 border-gray-500' value={selectedOption} onChange={handleFilterChange}>
-              <option value="All">All</option>
-              <option value="Remote">Remote</option>
-              <option value="Onsite">Onsite</option>
-            </select>
+          <div className="mb-3 relative">
+            <button className="border px-3 py-2 rounded-lg mr-2" onClick={() => setShowDropdown(!showDropdown)}>Filter by</button>
+           
+            {showDropdown && (
+              <div className="absolute right-0 top-8 bg-white rounded-lg shadow-lg py-2">
+                <button
+                  onClick={() => handleRemoteOrOnsiteJob("Remote")}
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Remote
+                </button>
+                <button
+                  onClick={() => handleRemoteOrOnsiteJob("Onsite")}
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  Onsite
+                </button>
+              </div>
+            )}
           </div>
         </div>
         {remoteJobs[0] ? (
