@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faLocationDot,faDollar } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
-const AppliedJob = ({job}) => {
+const AppliedJob = ({job,handleRemoteJob}) => {
  const {id,company_logo,job_title,company_name,remote_or_onsite,fulltime_or_parttime,location,salary}=job;
+ const [open, setOpen]=useState(false)
+
  return (
-  <div className='border-2 border-indigo-200 mb-5 rounded-lg p-4 flex items-center justify-between'>
+  <div>
+  
+    <div className='border-2 border-indigo-200 mb-5 rounded-lg p-4 flex items-center justify-between'>
    <section className='flex gap-2 items-center'>
     <div className='bg-slate-200 py-16 px-10 text-center rounded-lg'>
      <img className='w-40  rounded-lg  ' src={company_logo} alt="" /></div>
@@ -17,7 +22,8 @@ const AppliedJob = ({job}) => {
  {location}</span> <span className='text-xl text-gray-500 font-medium'>Salary: <FontAwesomeIcon className='me-1' icon={faDollar} />{salary}</span></p>
     </div>
    </section>
-   <button className='bg-indigo-700 mt-2 px-3 py-2 text-white font-semibold rounded-lg'>View Details</button>
+   <button className='bg-indigo-700 mt-2 px-3 py-2 text-white font-semibold rounded-lg'><Link to={`/detail/${id}`}>View Details</Link></button>
+  </div>
   </div>
  );
 };

@@ -6,7 +6,7 @@ import { addToDb } from '../../utilities/fakedb';
 
 const JobDetails = () => {
  const jobData=useLoaderData();
- // console.log(jobData)
+ 
  const {jobId}=useParams();
 
 
