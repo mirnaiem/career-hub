@@ -13,6 +13,7 @@ import JobDetails from './components/JobDetails/JobDetails';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import savedJobLoader from './loader/SaveJobLoader';
 import Statistic from './components/Statistic/Statistic';
+import NotFounded from './components/NotFounded/NotFounded';
 const router=createBrowserRouter([
   {
     path:"/",
@@ -38,8 +39,13 @@ const router=createBrowserRouter([
         path:'statistic',
         element:<Statistic></Statistic>
       }
+     
     ]
-  }
+  },
+   {
+        path:"*",
+        element:<NotFounded></NotFounded>
+      }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
