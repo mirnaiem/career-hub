@@ -14,7 +14,7 @@ const Header = () => {
    <div className='md:hidden' onClick={()=>setOpen(!open)}>
     <span>{!open?<FontAwesomeIcon icon={faBars} />:<FontAwesomeIcon icon={faXmark} />}</span>
    </div>
-   <div className={`flex p-1 rounded-lg text-white md:text-black m:p-0 mt-3 m:mt-0 bg-indigo-500 md:bg-gray-50 gap-8 text-xl absolute md:static font-semibold ${open? 'top-20':'-top-36'}`}>
+   <div className={`flex p-1 rounded-lg text-white md:text-black m:p-0 mt-3 m:mt-0 bg-indigo-500 md:bg-gray-50 gap-4 md:gap-8 text-xl absolute md:static font-semibold ${open? 'top-20':'-top-36'}`}>
     <Link to="/">Home</Link>
     <Link to="/statistic">Statistic</Link>
     <Link to="/jobs">Applied Jobs</Link>
