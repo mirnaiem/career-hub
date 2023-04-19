@@ -21,7 +21,7 @@ const Featured = () => {
     <div className='w-80 mx-auto mb-10 '>
       <h1 className='text-4xl font-semibold text-center'>Featured Jobs</h1>
       <p className='text-gray-500 text-center mt-2 mb-8'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-      <div className='grid grid-cols-2 gap-6'>
+      <div className='grid md:grid-cols-2 gap-6'>
         {
           jobs.slice(0, numToShow).map(job => <FeaturedJob key={job.id} job={job} />)
         }

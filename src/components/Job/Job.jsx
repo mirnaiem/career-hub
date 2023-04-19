@@ -5,7 +5,7 @@ const Job = ({job}) => {
  return (
  
   
-   <div className='bg-slate-50 pe-28 py-10 ps-10 rounded-lg mb-32'>
+   <div className='bg-slate-50 pe-28 py-10 ps-10 rounded-lg '>
    <img className='w-20 h-20 rounded-lg mb-8 bg-slate-200 p-4' src={category_logo} alt="" />
    <h2 className='text-2xl text-gray-900 font-semibold mb-2'>{category_name}</h2>
    <p>{jobs_available} Jobs Available</p>
