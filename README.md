@@ -25,3 +25,6 @@ In a Brief
 
 - By clicking blog option one can show some questions and answers.
 
+# Live site link of this site
+[live site](https://teal-twilight-8a4087.netlify.app/)
+
