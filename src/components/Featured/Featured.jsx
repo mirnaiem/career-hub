@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import FeaturedJob from '../FeaturedJob/FeaturedJob';
-import JobDetails from '../JobDetails/JobDetails';
-import { Link } from 'react-router-dom';
+
 
 const Featured = () => {
   const [jobs, setJobs] = useState([]);
