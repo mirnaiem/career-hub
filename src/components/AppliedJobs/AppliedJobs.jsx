@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { getShoppingCart } from '../../utilities/fakedb';
 import AppliedJob from '../AppliedJob/AppliedJob';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faArrowDown} from '@fortawesome/free-solid-svg-icons'
 
 const AppliedJobs = () => {
   const loadedJobs = useLoaderData();
@@ -36,7 +38,7 @@ const AppliedJobs = () => {
         <div className="flex justify-between">
           <div></div>
           <div className="mb-3 relative">
-            <button className="border px-3 py-2 rounded-lg mr-2" onClick={() => setShowDropdown(!showDropdown)}>Filter by</button>
+            <button className="border px-3 py-2 rounded-lg mr-2" onClick={() => setShowDropdown(!showDropdown)}>Filter by <FontAwesomeIcon className='me-1 text-gray-500' icon={faArrowDown} /></button>
            
             {showDropdown && (
               <div className="absolute right-0 top-8 bg-white rounded-lg shadow-lg py-2">
