@@ -14,7 +14,7 @@ const Header = () => {
    <div className='md:hidden' onClick={()=>setOpen(!open)}>
     <span>{!open?<FontAwesomeIcon icon={faBars} />:<FontAwesomeIcon icon={faXmark} />}</span>
    </div>
-   <div className={`flex p-1 rounded-lg text-white md:text-black m:p-0 mt-3 m:mt-0 bg-indigo-500 md:bg-gray-50 gap-4 md:gap-8 text-xl absolute md:static font-semibold ${open? 'top-20':'-top-36'}`}>
+   <div className={`flex flex-col md:flex-row  p-1 rounded-lg text-white md:text-black m:p-0 mt-3 m:mt-0 bg-indigo-500 md:bg-gray-50 gap-2 md:gap-8 text-xl absolute md:static font-semibold duration-1000 ${open? 'top-20 right-2':'-top-48  right-2'}`}>
     <Link to="/">Home</Link>
     <Link to="/statistic">Statistic</Link>
     <Link to="/jobs">Applied Jobs</Link>
@@ -24,7 +24,7 @@ const Header = () => {
    
    
    
-   <button className='bg-indigo-700 p-4 rounded-lg text-white font-semibold'>Start Applying</button>
+   <button className={`bg-indigo-700 p-4 rounded-lg text-white font-semibold absolute md:static duration-1000  ${open? 'top-20':'-top-36 '}`}>Start Applying</button>
   </nav>
  </div>
  </div>
